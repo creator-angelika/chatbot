@@ -26,13 +26,15 @@ const Avatar = () => {
 		<group>
 			<primitive
 				object={avatar.scene}
-				scale={2}
-				position-y={-2}
-				rotation-y={-0.5}
-				position-x={[-1]}
+				scale={6}
+				position-y={-8}
+				rotation-y={0.8}
+				position-x={[-3]}
+				rotation-x={0.1}
+				
 			/>
 
-			<Html position={[-3.7, 0.3, 0]}>
+			<Html position={[1.5, -0.5, 0]}>
 				<button
 					className="bg-theme text-black w-[100px] p-2  rounded-lg text-xs sm:text-lg sm:w-[200px] hover:bg-white hover:scale-110 duration-500"
 					onClick={() => {
@@ -40,7 +42,7 @@ const Avatar = () => {
 						setIsClicked(!isClicked);
 					}}
 				>
-					{isClicked ? "Check out my moves" : "Impress Me!"}
+					{isClicked ? "I have ordered!" : "Say Hi!"}
 				</button>
 			</Html>
 		</group>
